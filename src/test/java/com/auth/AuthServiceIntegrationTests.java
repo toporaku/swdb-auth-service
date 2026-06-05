@@ -327,4 +327,13 @@ public class AuthServiceIntegrationTests {
         User admin = adminOpt.get();
         assertTrue(admin.getRoles().contains("Administrator"));
     }
+
+    // @spec AUTH-INT-004
+    @Test
+    void testActuatorEndpointsPermitAll() throws Exception {
+        mockMvc.perform(get("/actuator/health"))
+                .andExpect(status().isOk());
+        mockMvc.perform(get("/actuator/info"))
+                .andExpect(status().isOk());
+    }
 }
