@@ -4,13 +4,13 @@ Este repositorio contiene el microservicio de **Servicio de Autenticación y Usu
 
 ---
 
-## 📝 Descripción
+## Descripción
 
 Servicio encargado de la seguridad perimetral. Administra el registro de usuarios, roles ('Administrator', 'User') e inicio de sesión seguro con generación de Tokens JWT (JSON Web Tokens) firmados.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Tech Stack
 
 *   **Lenguaje de Programación:** Java 17
 *   **Framework Principal:** Spring Boot 3
@@ -20,7 +20,7 @@ Servicio encargado de la seguridad perimetral. Administra el registro de usuario
 
 ---
 
-## 🚀 Guía de Ejecución Independiente
+## Guía de Ejecución
 
 Si desea arrancar este microservicio por separado para depuración o pruebas locales, siga estas instrucciones:
 
@@ -37,12 +37,12 @@ mvn spring-boot:run
 
 ---
 
-## 📖 Documentación de Endpoints (Swagger / OpenAPI)
+## Documentación de Endpoints (Swagger / OpenAPI)
 
 Este microservicio cuenta con documentación de API interactiva autogenerada con OpenAPI. 
 
 Una vez que el servicio esté corriendo, puede explorar y probar los endpoints interactivos ingresando a la siguiente dirección en su navegador:
-👉 **[Swagger UI - Servicio de Autenticación y Usuarios (Auth Service)](http://localhost:8082/swagger-ui/index.html)**
+ **[Swagger UI - Servicio de Autenticación y Usuarios (Auth Service)](http://localhost:8082/swagger-ui/index.html)**
 
 *Nota: La ruta de metadatos OpenAPI cruda en formato JSON está disponible en: `http://localhost:8082/v3/api-docs`.*
 
